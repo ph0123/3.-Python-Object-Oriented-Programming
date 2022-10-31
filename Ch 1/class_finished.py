@@ -38,6 +38,8 @@ class Book:
 
 # TODO: access the class attribute
 print("Book types: ", Book.getbooktypes())
+#Similar result
+# print("Book types: ", Book.BOOK_TYPES)
 
 # TODO: Create some book instances
 b1 = Book("Title 1", "HARDCOVER")
