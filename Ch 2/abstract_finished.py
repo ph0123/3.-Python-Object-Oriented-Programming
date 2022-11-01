@@ -32,7 +32,7 @@ class Square(GraphicShape):
 
 
 # Abstract classes can't be instantiated themselves
-# g = GraphicShape() # this will error
+#g = GraphicShape() # this will error
 
 c = Circle(10)
 print(c.calcArea())

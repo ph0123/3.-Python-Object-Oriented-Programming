@@ -16,7 +16,7 @@ class B:
         self.name = "Class B"
 
 
-class C(B, A):
+class C(B, A): #order is important if class A and B have similar attribute names.
     def __init__(self):
         super().__init__()
 
