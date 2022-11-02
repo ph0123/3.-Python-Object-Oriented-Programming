@@ -10,15 +10,20 @@ class ImmutableClass:
     value2: int = 0
 
     def somefunc(self, newval):
-        self.value2 = newval
+        #self.value2 = newval #error here.
+        #we can not change even inside the class with 
+        #frozen = true
+        pass
 
 
 obj = ImmutableClass()
 print(obj.value1)
 
-# attempting to change the value of an immutable class throws an exception
-obj.value1 = "Another value"
+# attempting to change the value of an immutable class
+# throws an exception
+#obj.value1 = "Another value" #error here if uncomment
 print(obj.value1)
+
 
 # Frozen classes can't modify themselves either
 obj.somefunc(20)
